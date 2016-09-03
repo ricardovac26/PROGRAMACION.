@@ -1,0 +1,29 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main() 
+{
+	int N1,N2,N3;
+	cout<< "Ingrese primer valor:";
+	cin>> N1;
+	cout<<"Ingrese segundo valor";
+	cin>> N2;
+	cout<<"Ingrese tercer valor";
+	cin>> N3;
+	if(N1>N2)
+		if(N1>N3)
+			cout<<"el mayor es:" <<N1;
+		else
+			cout<<"el mayor es:" <<N3;
+	else
+		if (N2>N3)
+			cout<<"el mayor es: "<<N2;
+		else 
+			cout<<"el mayor es:" <<N3;
+	getch();
+
+}
