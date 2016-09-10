@@ -1,0 +1,31 @@
+// INTERES.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main ()
+{
+	float K,I,N,i;
+	cout<<"ingrese capital inicial";
+	cin>> K;
+	if(K<=1000)
+		cout<<"no se puede otorgar el prestamo";
+	else
+	{
+	cout<<"ingrese interes anual";
+	cin>> I;
+	cout<< "ingrese numero de dias";
+	cin>> N;
+	
+	i=K*I*(N/360);
+		cout<< "el interes es:"<< i;
+	}
+	getch();
+
+
+
+}
