@@ -6,7 +6,8 @@ using namespace std;
 
 void main()
 {
-   int a, b, r, opcion;
+   int  b, opcion;
+   float a,r;
    cout << "Ingrese a: " ;
    cin >> a;
    cout << "Ingrese b: " ;
