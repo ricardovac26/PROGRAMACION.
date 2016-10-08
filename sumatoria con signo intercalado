@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+using namespace std;
+	void main()
+
+{
+	int S,n,a;
+	//Valida que se ingresen datos correctos
+	do {
+		cout<<"Ingrese el numero de elementos a sumar";
+			cin>>n;
+		} while (n<=0);
+	//Inicializar el acumulador de suma
+	S=0;
+	a=1;
+	for (int i=2;i<=n;i=i+2)
+		S=S+i*a;
+	a=a*(-1);
+	cout<<"La suma de la serie es: "<<S;
+	getch();
+}
